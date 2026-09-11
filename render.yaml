@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: zerads-register
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python zerads_render_worker.py
